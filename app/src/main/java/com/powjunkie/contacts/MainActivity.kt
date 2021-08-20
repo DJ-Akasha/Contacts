@@ -10,7 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val fab: View = findViewById(R.id.fab)
+        // Floating Action Button that starts the AddContactsActivity
+        val fab: View = findViewById(R.id.fabAddContact)
         fab.setOnClickListener {
             startActivity(Intent(this@MainActivity, AddContactsActivity::class.java))
         }

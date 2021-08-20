@@ -2,4 +2,10 @@
     <string name="app_name">Contacts</string>
     <string name="add_contact">Add a contact</string>
     <string name="no_contacts_yet">No Contacts Yet!</string>
+    <string name="image_of_the_twitter_logo">Image of the Twitter logo</string>
+    <string name="placeholder_image_for_a_photo">Placeholder image for a photo</string>
+    <string name="image_of_a_phone">Image of a phone</string>
+    <string name="image_of_an_envelope">Image of an envelope</string>
+    <string name="image_of_a_camera">Image of a camera</string>
+    <string name="submit_button">Submit Button</string>
 </resources>
