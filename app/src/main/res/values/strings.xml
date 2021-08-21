@@ -8,4 +8,6 @@
     <string name="image_of_an_envelope">Image of an envelope</string>
     <string name="image_of_a_camera">Image of a camera</string>
     <string name="submit_button">Submit Button</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last name</string>
 </resources>

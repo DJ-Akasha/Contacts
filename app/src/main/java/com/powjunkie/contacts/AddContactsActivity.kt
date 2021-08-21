@@ -1,11 +1,7 @@
 package com.powjunkie.contacts
 
-import android.app.Activity
-import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.provider.MediaStore
 import android.view.View
 import android.widget.ImageView
 import androidx.activity.result.contract.ActivityResultContracts
