@@ -12,16 +12,16 @@ interface ContactDetailsDatabaseDAO {
     @Update
     fun update(details: ContactDetails)
 
-    @Query("SELECT * FROM individual_contact_details_table WHERE individualContactId = :key")
+    @Query("SELECT * FROM contacts_details_table WHERE individualContactId = :key")
     fun get(key: PrimaryKey): ContactDetails?
 
-    @Query("DELETE FROM individual_contact_details_table")
-    fun clear()
+    @Query("DELETE FROM contacts_details_table WHERE individualContactId = :key")
+    fun deleteSingleUser(key: PrimaryKey)
 
-    @Query("SELECT * FROM individual_contact_details_table ORDER BY first_Name ASC")
+    @Query("SELECT * FROM contacts_details_table ORDER BY first_Name ASC")
     fun getAllContacts(): LiveData<List<ContactDetails>>
 
-    @Query("SELECT * FROM individual_contact_details_table ORDER BY first_Name ASC LIMIT 1")
+    @Query("SELECT * FROM contacts_details_table ORDER BY first_Name ASC LIMIT 1")
     fun getContact(): ContactDetails?
 
 }

@@ -1,5 +1,6 @@
 package com.powjunkie.contacts.database
 
+import android.media.Image
 import android.provider.ContactsContract
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -8,7 +9,7 @@ import androidx.room.PrimaryKey
 /**
  * This class is used by Room to create a Table
  */
-@Entity(tableName = "individual_contact_details_table")
+@Entity(tableName = "contacts_details_table")
 data class ContactDetails (
 
     @PrimaryKey(autoGenerate = true)
@@ -18,7 +19,7 @@ data class ContactDetails (
     var firstName: String?,
 
     @ColumnInfo(name = "last_name")
-    var LastName: String?,
+    var lastName: String?,
 
     @ColumnInfo(name = "nickname")
     var nickname: String?,
@@ -30,5 +31,9 @@ data class ContactDetails (
     var email: ContactsContract.CommonDataKinds.Email?,
 
     @ColumnInfo(name = "twitter_tag")
-    var twitter: String?
+    var twitter: String?,
+
+    @ColumnInfo(name = "contact_image")
+    var contactImage: Image?
         )
+
