@@ -28,14 +28,10 @@ class AddContactsActivity : AppCompatActivity() {
          *
          */
 
-        // A reference to the application that this activity is attached to, to pass into the
-        // ViewModelFactory provider.
-        val application = requireNotNull(this).application
-
         // A reference to the data source via a reference to the DAO
         val dataSource = ContactDetailsDatabase.getInstance(application).contactDetailsDatabaseDAO
 
-        // An instance of the ContactsViewModelFactory we pass it the dataSource and the application
+        // An instance of the ContactsViewModelFactory we pass it the  dataSource and the application
         val viewModelFactory = ContactsViewModelFactory(dataSource, application)
 
         // We pass in our viewModelFactory and request an instance of the ContactsViewModel.

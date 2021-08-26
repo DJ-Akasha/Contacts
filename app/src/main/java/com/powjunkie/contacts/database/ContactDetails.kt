@@ -1,5 +1,6 @@
 package com.powjunkie.contacts.database
 
+import android.graphics.Bitmap
 import android.media.Image
 import android.provider.ContactsContract
 import androidx.room.ColumnInfo
@@ -25,15 +26,16 @@ data class ContactDetails (
     var nickname: String?,
 
     @ColumnInfo(name = "phone_number")
-    var phone: ContactsContract.CommonDataKinds.Phone?,
+    var phone: Int?,
 
     @ColumnInfo(name = "email_address")
-    var email: ContactsContract.CommonDataKinds.Email?,
+    var email: String?,
 
     @ColumnInfo(name = "twitter_tag")
     var twitter: String?,
 
-    @ColumnInfo(name = "contact_image")
-    var contactImage: Image?
-        )
+    /*@ColumnInfo(name = "contact_image")
+    var contactImage: Bitmap? // or Image? neither are working at the moment
+        */
 
+)

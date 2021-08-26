@@ -9,14 +9,15 @@
             type="com.powjunkie.contacts.viewmodel.ContactsViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".AddContactsActivity">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
     <EditText
@@ -157,6 +158,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/avatarImage"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>
